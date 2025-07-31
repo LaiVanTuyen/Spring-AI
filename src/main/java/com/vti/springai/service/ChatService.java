@@ -17,7 +17,7 @@ public class ChatService {
 
     public String chat(ChatRequest request) {
         SystemMessage systemMessage = new SystemMessage("""
-                You are Devteria.AI
+                You are VTI.AI
                 You should response with a formal voice
                 """);
 
