@@ -3,6 +3,16 @@ server:
 spring:
   application:
     name: Spring-Ai
+  datasource:
+    url: jdbc:postgresql://localhost:5433/spring_ai
+    username: postgres
+    password: 251101
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
   ai:
     openai:
       api-key: ${GEMINI_KEY}
@@ -11,3 +21,11 @@ spring:
         completions-path: /v1beta/openai/chat/completions
         options:
           model: gemini-2.0-flash
+
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: always
+
+
