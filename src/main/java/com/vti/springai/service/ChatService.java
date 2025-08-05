@@ -3,6 +3,7 @@ package com.vti.springai.service;
 import com.vti.springai.dto.BillItem;
 import com.vti.springai.dto.ChatRequest;
 import com.vti.springai.dto.ExpenseInfo;
+import com.vti.springai.dto.FilmInfo;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
